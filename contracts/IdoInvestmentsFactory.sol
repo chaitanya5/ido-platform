@@ -2,14 +2,12 @@
 pragma solidity 0.6.12;
 pragma experimental ABIEncoderV2;
 
-import "./IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol";
 import "./IdoInvestmentsPresale.sol";
 import "./IdoInvestmentsInfo.sol";
 import "./IdoInvestmentsLiquidityLock.sol";
 
-interface IUniswapV2Factory {
-    function getPair(address tokenA, address tokenB) external view returns (address pair);
-}
 
 contract IdoInvestmentsFactory {
     using SafeMath for uint256;

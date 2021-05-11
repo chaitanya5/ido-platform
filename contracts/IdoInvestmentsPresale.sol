@@ -1,27 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.5.16 <0.8.0;
+pragma solidity ^0.6.0;
 
-import "./SafeMath.sol";
-import "./IERC20.sol";
-//import "./abc.sol";
-
-interface IUniswapV2Router02 {
-    function addLiquidityETH(
-        address token,
-        uint256 amountTokenDesired,
-        uint256 amountTokenMin,
-        uint256 amountETHMin,
-        address to,
-        uint256 deadline
-    )
-    external
-    payable
-    returns (
-        uint256 amountToken,
-        uint256 amountETH,
-        uint256 liquidity
-    );
-}
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@uniswap/v2-periphery/contracts/libraries/SafeMath.sol";
+import "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol";
 
 contract IdoInvestmentsPresale {
     using SafeMath for uint256;
