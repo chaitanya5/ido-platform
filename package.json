@@ -1,0 +1,25 @@
+{
+  "name": "ido-platform",
+  "version": "1.0.0",
+  "description": "Presale IDO platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaitanya5/ido-platform.git"
+  },
+  "keywords": [],
+  "author": "Rout Chaitanya",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.1.0",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0"
+  },
+  "bugs": {
+    "url": "https://github.com/chaitanya5/ido-platform/issues"
+  },
+  "homepage": "https://github.com/chaitanya5/ido-platform#readme"
+}
